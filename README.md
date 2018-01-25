@@ -10,7 +10,7 @@ const height = [5, 3, 7, 2, 6, 4, 6, 9, 1, 2];
 ### Output
 ```
 const result = [3, 8, 10]
-// 11 blocks of water trapped between blocks 3 and 8 
+// 10 blocks of water trapped between blocks 3 and 8 
 ```
 
 ### Constraints
