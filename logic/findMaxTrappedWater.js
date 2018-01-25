@@ -1,6 +1,6 @@
 const findMaxTrappedWater = (height) => {
   let maxPair;
-  let max = 0;
+  let max = -1;
 
   const leftEdge = findLeftEdge(height);
   const rightEdge = findRightEdge(height);
@@ -36,7 +36,7 @@ const findMaxTrappedWater = (height) => {
 
 const findLeftEdge = (height) => {
   const leftEdge = [];
-  let max = 0;
+  let max = -1;
   for (let i = 0; i < height.length; i++) {
     if (height[i] > max) {
       max = height[i];
@@ -48,7 +48,7 @@ const findLeftEdge = (height) => {
 
 const findRightEdge = (height) => {
   const rightEdge = [];
-  let max = 0;
+  let max = -1;
   for (let i = height.length - 1; i >= 0; i--) {
     if (height[i] > max) {
       max = height[i];
@@ -65,3 +65,10 @@ const calculateTrappedWater = (height, idx1, idx2) => {
   }
   return waterCount;
 }
+
+module.exports = {
+  findMaxTrappedWater: findMaxTrappedWater,
+  findLeftEdge: findLeftEdge,
+  findRightEdge: findRightEdge,
+  calculateTrappedWater: calculateTrappedWater
+};

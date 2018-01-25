@@ -1,0 +1,23 @@
+{
+  "name": "water-walls",
+  "version": "1.0.0",
+  "description": "## Set-up",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calebchoi/water-walls.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calebchoi/water-walls/issues"
+  },
+  "homepage": "https://github.com/calebchoi/water-walls#readme",
+  "devDependencies": {
+    "jest": "^22.1.4"
+  }
+}
