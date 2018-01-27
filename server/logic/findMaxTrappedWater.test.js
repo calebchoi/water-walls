@@ -11,3 +11,7 @@ test('find maximum trapped water when left edge !== right edge', () => {
 test('max should be 0 when no water is trapped', () => {
   expect(findMaxTrappedWater([1, 2, 3, 4])).toEqual([1, 2, 0]);
 });
+
+test('max should be 0 when no water is trapped', () => {
+  expect(findMaxTrappedWater([4, 3, 2, 1])).toEqual([1, 2, 0]);
+});

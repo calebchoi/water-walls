@@ -1,5 +1,49 @@
+* {
+  font-family: sans-serif;
+}
+
 .form {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+}
+
+.water-blocks {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 0vh;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+#col0.column {
+  flex-direction: column-reverse;
+}
+
+.box {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  border: 0.25px solid #d4dbdb;
+  border-collapse: collapse;
+  align-items: center;
+  justify-content: center;
+}
+
+#water {
+  background-color: #54ecf7;
+}
+
+#wall {
+  background-color: #b2b9ba;
+}
+
+#maxWall {
+  background-color: black;
+  border-color: black;
 }

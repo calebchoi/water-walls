@@ -16,9 +16,9 @@ const findMaxTrappedWater = (height) => {
   }
 
   for (let i = rightEdge.length - 1; i > 0; i--) {
-    let water = helper.calculateTrappedWater(height, leftEdge[i], leftEdge[i-1]);
+    let water = helper.calculateTrappedWater(height, rightEdge[i], rightEdge[i-1]);
     if (water > max) {
-      maxPair = [leftEdge[i], leftEdge[i-1]];
+      maxPair = [rightEdge[i], rightEdge[i-1]];
       max = water;
     }
   }
